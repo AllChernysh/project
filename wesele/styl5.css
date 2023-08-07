@@ -1,0 +1,56 @@
+body {
+	background-color: #86ACDD;
+}
+
+#baner {
+	background-color: #1C59A7 ;
+	text-align: center;
+	color: white;
+}
+
+.panele {
+	display: flex;
+}
+
+.panele > div {
+	margin-right: auto;
+}
+
+#left {
+	background-color: #3A70B5;
+	width: 33%;
+	height: 200px;
+}
+
+#center {
+	background-color: #5A8AC8;
+	width: 33%;
+	height: 200px;
+}
+
+#right {
+	background-color: #86ACDD;
+	width: 34%;
+	height: 200px;
+	text-align: center;
+}
+
+#right > a {
+	background-color: yellow;
+	color: blue;
+	padding: 10px;
+}	
+
+#bottom {
+	background-color: #86ACDD;
+	text-align: center;
+}
+
+#stopka {
+	background-color: #1C59A7;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+	
