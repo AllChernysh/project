@@ -1,0 +1,194 @@
+body
+{
+	background-image: url("8.gif");
+	 background-size: cover;
+}
+
+#container
+{
+	
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Liu Jian Mao Cao', cursive;
+}
+#logo	
+{
+	   
+	    background-color:#303030;
+		width:1863px;
+		font-size: 94px;
+		letter-spacing: 15px;
+		font-weight:900;
+		text-align: center;
+		font-family: 'Liu Jian Mao Cao', cursive;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+		margin-LEFT: 10px;
+		
+}
+
+#menu
+{
+	width:1864px;
+	color:green;
+	background-color:#696969;	
+	letter-spacing: 9px;
+    display: table;
+	font-size: 44px;
+    margin-LEFT: 10px;
+	text-align: center;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	border-BOTTOM-left-radius: 10px;
+    border-BOTTOM-right-radius:10px;
+}
+#sidebar
+
+{
+	
+	float: left;
+	width:1864px;
+	height:320px;
+	margin: 10px;
+	text-align: cent;
+	font-weight: 700;
+	font-size:1px;
+    
+	border-radius:10px 10px 10px 10px;
+}
+.knopki
+{
+display:table;
+width: 100%;
+HEIGHT:100px;
+}
+.down1
+{   float: left;
+	width:611px;
+	height:604px;
+	margin: 10px;
+	background-image: url("5.jpg");
+	text-align: center;
+	font-size: 28px;
+    background-size: cover;
+	border-radius:20px 20px 20px 20px;
+	
+}
+.down3
+{   float: left;
+	width:611px;
+	height:604px;
+	margin: 10px;
+	background-image: url("6.jpg");
+	text-align: center;
+	font-size: 28px;
+	background-size: cover;
+	border-radius:20px 20px 20px 20px;
+	
+}
+.down4
+{   float: left;
+	width:611px;
+	height:604px;
+	margin: 10px;
+	background-color: lightgray;
+	text-align: center;
+	font-size: 28px;
+	background-image: url("7.jpg");
+	border-radius:20px 20px 20px 20px;
+	background-size: cover;
+}
+.down2
+{
+	float: left;
+	width:1864px;
+	height:780px;
+	margin: 10px;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+background-image: url("11.jpg");
+		letter-spacing: 5px;
+	 background-size: cover;
+	border-radius:10px 10px 10px 10px;
+}
+.option
+{
+	float: left;
+	min-width: 150px; 
+	height: 25px;
+	font-size: 28px;
+	padding: 60px;
+	
+	opacity: 1;
+	text-align: center;
+	border-radius:10px 10px 10px 10px;
+}
+.option1
+{
+	margin-left:60px;
+	margin-top:-30px;
+	float: left;
+	min-width: 150px; 
+	height: 25px;
+	font-size: 28px;
+	padding: 60px;
+
+	opacity: 1;
+	text-align: center;
+	border-radius:10px 10px 10px 10px;
+}
+.option2
+{
+
+    margin-top:-30px;
+	float: left;
+	min-width: 150px; 
+	height: 25px;
+	font-size: 58px;
+	padding: 60px;
+	
+    opacity: 1;
+    text-align: center;
+	border-radius:10px 10px 10px 10px;
+}
+logo:hover
+{
+    border: 2px solid Maroon;
+}
+
+img:hover
+{
+    border: 2px solid Maroon;
+}
+
+
+
+
+img
+{
+	border-radius: 20px 20px 20px 20px;
+}
+.box
+{
+	display:table-cell;
+	text-align: center;
+	vertical-align:middle;
+	
+}
+@media (max-width: 420px){
+.box
+{
+	display: block;
+width: 100%;
+}}
+.gradient-text {
+  font-family: 'Rubik One', sans-serif;
+  font-size: 94px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: -1px auto;
+}

@@ -1,0 +1,119 @@
+// TYPOGRAPHY
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+$main-font: 'Lato';
+
+// COLORS
+$white: #fff;
+$black: #000;
+$accent: #5C6BC0;
+
+// SETTING
+$word1-len: 9;
+$word2-len: 8;
+$word3-len: 8;
+$word4-len: 10;
+$speed: 1s;
+$easing: linear;
+
+
+// MIXINS
+@mixin pseudo-ready($position: absolute){
+  position: relative;
+  &::before, &::after{
+    content: '';
+    position: $position;
+  }
+}
+
+@mixin delTrans($num){
+  span{
+    @for $i from 1 through $num{
+      &:nth-child(#{$i}){ 
+        transition-delay: ($i / 10) + 0s;
+      }
+    }
+  }
+}
+
+
+// GENERAL
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-family: $main-font;
+  font-size: 16px;
+  background: $accent;
+}
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+  font-weight: normal;
+}
+
+
+// MENU STYLE
+.menu{
+  margin: 0;
+  padding: 0;
+  li{
+    position: relative;
+    margin: 0;
+    padding: 0 0 1rem 2rem;
+    list-style: none;
+    perspective: 500px;
+    @include pseudo-ready();
+    &::before{
+      top: 50%;
+      left: 0;
+      transform: translateY(-80%);
+      width: .6rem;
+      height: .6rem;
+      background: rgba($white, .4);
+      border-radius: 50%;
+      transition: background $speed;
+    }
+    &:hover{
+      &::before{
+        background: $white;
+      }
+    }
+  }
+}
+
+.word{
+  text-decoration: none;
+  color: rgba($white, .4);
+  &:hover{
+    span{
+      transform: rotateX(-360deg);
+      color: $white;
+    }
+  }
+  span{
+    display: inline-block;
+    padding: 0 .1rem;
+    font-weight: 300;
+    font-size: 2.5em;
+    transition: transform $speed $easing,
+                color $speed*2 $easing; 
+  }
+}
+
+// Set delays
+.word1{
+  @include delTrans($word1-len);
+}
+.word2{
+  @include delTrans($word2-len);
+}
+.word3{
+  @include delTrans($word3-len);
+}
+.word4{
+  @include delTrans($word4-len);
+}

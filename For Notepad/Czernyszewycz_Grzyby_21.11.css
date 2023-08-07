@@ -1,0 +1,62 @@
+body
+{
+	background-color: sienna;  
+	
+}
+.topL
+{
+	background-color: Sienna ;
+	height:  100px;
+	width: 20%;
+margin-bottom: 10px;
+	float: left;
+}
+.topR
+{
+	background-color: Sienna ;
+	color: Orange;
+	height: 60px;
+	width: 55%;
+	float: left;
+}
+
+.midL
+{
+	background-color: BurlyWood;
+	height: 780px;
+	width: 70%; 
+	float: left;
+	margin: -7px;
+	
+}
+
+img
+{
+	border: solid RosyBrown;
+	margin: 7px;
+	padding: 5px;
+}
+
+
+img:hover
+{
+    border: 2px solid Maroon;
+}
+
+
+.midR
+{
+	background-color: BurlyWood;
+	height: 780px;
+	width: 30.8%; 
+	float: right;
+	margin: -7px;
+}
+#Bot
+{
+	clear: both;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+}

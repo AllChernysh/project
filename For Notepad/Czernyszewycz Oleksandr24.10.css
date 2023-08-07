@@ -1,0 +1,113 @@
+body
+{
+	background-color: #303030;  
+	
+}
+#container
+{
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.rectangle
+{
+	width:960px;
+	margin: 20px;
+}
+.square
+{
+	width: 50%;
+	float: left;
+}
+#logo
+{
+	float:left;
+	width:600px;
+	font-size: 70px;
+}
+#zegar
+{
+	float: left;
+	font-size: 70px;
+	text-align: left;
+}
+.tile1
+{
+	margin: 10px;
+	width: 230px;
+	height: 142px;
+	background-color: #3095d3;
+	float: left;
+	text-align: center;
+}
+.tile2
+{
+	margin: 10px;
+	width: 230px;
+	height: 142px;
+	background-color: #666666;
+	float: left;
+	text-align: center;
+}
+.tile3
+{
+	margin: 10px;
+	width: 230px;
+	height: 142px;
+	background-color: #93c748;
+	float: left;
+	text-align: center;
+}
+.tile4
+{
+	margin: 10px;
+	width: 420px;
+	height: 82px;
+	background-color: #ee5a32;
+	text-align: center;
+	font-size: 26px;
+	padding:30px;
+	line-height: 150%;
+}
+.tile5
+{
+	margin: 10px;
+	width: 420px;
+	height: 244px;
+	background-color: #666666;
+	padding: 30px;
+	text-align: justify;
+}
+.yt
+{
+	margin: 10px;
+	width: 105;
+	height: 142;
+	background-color: #d934348;
+	float: left;
+}
+.fb
+{
+	margin: 10px;
+	width: 105;
+	height: 142;
+	background-color: #4668b3;
+	float: left;
+}
+.inst
+{
+	margin: 10px;
+	width: 105;
+	height: 142;
+	background-color: #d95333;
+	float: left;
+}
+.yt
+{
+	margin: 10px;
+	width: 105;
+	height: 142;
+	background-color: #3095d3;
+	float: left;
+}
