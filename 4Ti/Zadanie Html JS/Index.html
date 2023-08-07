@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie JS</title>
+</head>
+<body style=" text-align: center">
+    <button onclick=d1() >---------1---------</button>
+    <br>  <br>
+    <button onclick=d2()>---------2---------</button>
+    <br> <br>
+    <button onclick=d3()>---------3---------</button> <br> <br>
+    <button onclick=d4()>---------4---------</button> <br> <br>
+    <button onclick=d5()>---------5---------</button> <br> <br>
+    <button onclick=d6()>---------6---------</button> <br> <br>
+    <button onclick=d7()>---------7---------</button> <br> <br>
+    <button onclick=d8()>---------8---------</button> <br> <br>
+    <button onclick=d9()>---------9---------</button> <br> <br>
+    <button onclick=d10()>--------10--------</button> <br> <br>
+
+
+    <div id="for__d2" style="text-align: center">
+        <p id="Imie_Nazw" style="font-size: 32px;"></p>
+        <p id="Wiek" style="font-style: italic;" ></p>
+        <p id="Zawód" style="color: red"></p>
+    </div>
+
+</body>
+    <script>
+    function d1() {
+        alert ("Siema");
+        var a = prompt ("Ile masz lat?");
+        alert ("Super");
+        
+    }
+    function d2() { 
+
+        var Im_Na = prompt ("Podaj Imię i nazwisko");
+        var Wiek = prompt ("Podaj Wiek:");
+        var Zaw = prompt ("Podaj zawód: ");
+
+
+        document.getElementById("Imie_Nazw").innerHTML = Im_Na;
+        document.getElementById("Wiek").innerHTML = Wiek;
+        document.getElementById("Zawód").innerHTML = Zaw;
+
+    }
+
+    function d3() { 
+        var a = prompt ("Podaj liczbę: ");
+        if (a >= 100 && a % 3 == 0) alert("Podana liczba pasuje ");
+        else alert("Podana liczba nie pasuje");
+    }
+
+    function d4(){
+        var li_1 = prompt ("Podaj pirwszą liczbę");
+        var li_2 = prompt ("Podaj drugą liczbę");
+        var li_3 = prompt ("Podaj trzecią liczbę");
+
+        var temp;
+
+        if (li_3<li_2) {
+            temp = li_3;
+            li_3 = li_2;
+            li_2 = temp; 
+        }
+        if (li_2<li_1) {
+            temp = li_1;
+            li_2 = li_1;
+            li_1 = temp; 
+        }
+        if (li_3<li_2) {
+            temp = li_3;
+            li_3 = li_2;
+            li_2 = temp; 
+        }
+        alert (li_3 + " " + li_2 + " " + li_1);
+    }
+        function d5(){
+            var height = prompt ("wpisz swój wzrost (cm)");
+            if(height <= 150){ alert ("nizki");}
+            else if((height <= 180) && (height > 150)){alert ( "śriedniego wzrostu");}
+            else if(height > 180){ alert ( "wysoki");}
+
+
+        }
+        function d6(){
+            var x = prompt("Podaj x: ");
+            var y = prompt("Podaj y: ");
+            if (x>y) alert("y muśi być większy od x");
+
+            function dodawanie(x, y) {
+            var a = 0;
+            for(;x <= y; x++) {
+            a += x; }
+            return a;}
+            var dodawanie = dodawanie (parseInt(x), parseInt(y));
+            alert("Suma przedziału : "+ dodawanie);
+     
+
+        }
+
+        function d7(){
+    var pas = "liczba";
+    var x = prompt("Podaj hasło: ");
+    if (x == pas) {
+        alert("Witam ");
+       location = "liczba.html";
+        }
+        else {
+        alert( "Bład hasło") ;
+        var x = prompt("Podaj x: ");
+    }
+}
+        function d8(){ 
+        var x = parseInt(prompt("Podaj liczbę początkową: "));
+        var y = parseInt(prompt("Podaj liczbę końcową: "));
+
+         var a=""
+        for(i=x;i<=y;i++) {
+        a+=i+", "}
+        for(i=x;i>=y;i--) {
+        a+=i+", "}
+        alert(a)} 
+        
+        
+        function d9(){
+        var x = parseInt(prompt("Podaj liczbę 1:"));
+        var y = parseInt(prompt("Podaj liczbę 2: "));
+        if ((x % 2 == 0) && (y % 2 == 0)) alert ("Suma : " + (x+y));
+        else if ((x > 0) && (y > 0)) alert ("Iloczyn: " + (x * y));
+}
+        function d10(){
+            var zl = prompt("Podaj case w zl: ");
+            alert("Kwota : " + (zl * 0.222) + " Euro");
+
+        }
+
+</script>
+    
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zegarek</title>
+</head>
+<body>
+   <h1 style="text-align: center;  font-size: 300%; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 750px;
+    color: #333366;" id="chas"></h1>
+    <script>
+    function zegar(){
+    var time = new Date();
+    var godz = time.getHours();
+    var min = time.getMinutes();
+    var sec = time.getSeconds();
+    var mis = time.getMilliseconds()
+   
+     
+    
+    
+    
+    if(min <10)
+    {min = "0" + min};
+    if(sec <10)
+    {sec = "0"+ sec};
+    if(godz <10)
+    {godz = "0" + godz};
+    if(mis <10)
+    {mis = "0"+ mis}; 
+    setTimeout("zegar()", 1)
+        
+       document.getElementById ("chas").innerHTML = (godz + "." + min + "." + sec + "." + mis)
+     }
+       zegar();
+    </script>
+</body>
+</html>

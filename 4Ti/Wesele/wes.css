@@ -1,0 +1,70 @@
+*{
+    margin: 0}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.head{
+    background-color: #1C59A7;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.head img{
+    height: 70px;
+}
+.head h1{
+    padding-top: 20px;
+}
+.info__row
+{
+    display: flex;
+    height: 200px;
+}
+.adres{
+flex: 1 1 33.333%;
+background-color: #3A70B5;
+}
+.ofer{
+
+
+    flex: 1 1 33.333%;
+background-color: #5a8ac8;
+
+}
+.ofer ul{
+    padding-left: 25px;
+}
+.button{
+    padding-top: 5px;
+    text-align: center;
+    flex: 1 1 33.333%;
+    background-color: #86ACDD;
+
+}
+.button button{
+     background-color: yellow;
+     padding: 10px;
+     font-size: 14px;
+     color:blue;
+     text-decoration: underline;
+}
+.cena{
+    padding-top: 10px;
+    width: 100%;
+    background-color:#86ACDD;
+    flex-grow: 1;
+}
+.cena .container{
+    
+    text-align: center;
+}
+footer{
+    color:#fff;
+    background-color:  #1C59A7;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wes.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <h1>Dom weselny zorganizuje wesele dla ciebie</h1>
+            <div class="logo"><img src="logo.png" alt=""></div>
+
+        </div>
+<div class="info">
+    <div class="info__row">
+      <div class="adres">
+          <h2>Dom Weselny</h2>
+          <p>Ul. Przemyslowa 5</p>
+          <p>Kalisz</p>
+          <p><a href="logo.png">Pobierz obrazek</a></p>
+      </div>
+      <div class="ofer">
+          <h2>Oferujemy</h2>
+          <ul>
+              <li>Wesela</li>
+              <li>Benkety</li>
+              <li>Konferencja</li>
+          </ul> 
+
+      </div>
+      <div class="button">
+          <button>czytaj regulamin</button>
+    </div>
+    </div>
+</div>
+<div class="cena">
+    <div class="container">
+    <h2> Ile będzie kosztowałó moje wesele? </h2>
+    <p> Podaj liczbe gości: <input type="number" id="skolko"></p>
+    
+    <p><input type="checkbox" name="ch" id="id"> Wesele z poprawinami? </p>
+    <button onclick="getcena()" >
+        Oblicz koszt
+    </button>
+    <p id="wsogo"></p>
+</div>
+</div>
+<footer>Strone wykonał czernysh</footer>
+    </div>
+    <script>
+
+        function getcena() {
+        var checkbox = document.getElementById("id");
+        var liczba =  document.getElementById("skolko").value;
+        if (checkbox.checked == true) { document.getElementById("wsogo").innerHTML ="Koszt Twojego wesela to: " + (liczba * 130) + " złotych";
+        } else {
+        document.getElementById("wsogo").innerHTML ="Koszt Twojego wesela to: " + (liczba * 100) + " złotych";
+        }
+        }
+        </script>
+</body>
+</html>

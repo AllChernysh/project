@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasza stacja paliw</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="head">
+<h1> <b>Witamy na stacji paliw!</b> </h1>
+</div>
+<div class="block__2">
+
+<div class="left">
+    <div class="logo__top"><img src="home.png" alt=""></div>
+    <div class="logo_down"><img src="znak.png" alt=""></div>
+</div>
+
+<div class="right"><img src="samochod.png" alt=""></div>
+</div>
+<div class="center">
+<div class="center_l">
+<h2>Oblić ile litrów musisz zatankować</h2>
+<p>Dystans do przyjechania w km:</p>
+<input type="number" id="km" required>
+<p>Spalenia samochodu w l/100km:</p>
+<input type="number" id="litr" required>
+<button onclick="getlitr()">Oblicz</button>
+<p id="Wynik"></p>
+</div>
+<div class="center_c">
+    <h2>Oblić koszt paliwa</h2>
+<p>Oblić koszt paliwa w Zł:</p>
+<p><input type="checkbox" name="ch1" id="id1">E95</p>
+<p><input type="checkbox" name="ch1" id="id2">E98</p>
+<p><input type="checkbox" name="ch1" id="id3">Diesel</p>
+<p><input type="checkbox" name="ch1" id="id4">LPG</p>
+<button onclick="getcenaz()">Oblicz</button>
+<p id="Cenaz"></p>
+</div>
+<div class="center_r">
+<h2>Cena na osobe</h2>
+<p>Ilosz osób:</p>
+<input type="number" id="Pas">
+<button onclick="getcenak()">Oblicz</button>
+<p id="Cena"></p>
+</div>
+
+</div>
+
+<div class="down">
+<div class="down__left">
+    <p>Strone wykonał Chernysh</p>
+</div>
+<div class="down__right">
+    <a href="#">Tu pobierzesz zapytania</a>
+</div>
+
+</div>
+    </div>
+    <script>
+
+        function getlitr() {
+            var km = document.getElementById("km").value;
+            var litr = document.getElementById("litr").value;
+            document.getElementById("Wynik").innerHTML ="Potrzebujesz: " + (km / 100 * litr) + " Litrów paliwa"
+        }
+
+
+        function getcenaz(){
+
+            var Wynnik = document.getElementById("Wynik");
+            var checkbox = document.getElementById("id1");
+            if (checkbox.checked  == true)
+             { document.getElementById("Cenaz").innerHTML ="Koszt paliwa: " + (Wynnik* 130) + " złotych";}
+             else {
+        document.getElementById("Cenaz").innerHTML ="Koszt Twojego wesela to: " + (Wynnik * 100) + " złotych";
+        }
+
+        }
+    </script>
+</body>
+</html>
